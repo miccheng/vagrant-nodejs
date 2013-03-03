@@ -10,15 +10,21 @@ Installs:
 
 1. Checkout the git repo.
 2. Install Vagrant:
+
 	```bash
-	$ gem install vagrant
-	```
-2. Start vagrant: 
+$ gem install vagrant
+```
+
+3. Start vagrant: 
+
 	```bash
-	$ vagrant up
-	```
-3. Put your project in `projects` folder.
-4. Login to the VM:
+$ vagrant up
+```
+
+4. Put your project in `projects` folder.
+5. Login to the VM:
+
 	```bash
-	$ vagrant ssh
-	```
+$ vagrant ssh
+```
+
