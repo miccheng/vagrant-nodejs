@@ -6,4 +6,18 @@ class node_dev{
 		command => "/usr/local/bin/npm install -g grunt-cli",
 		creates => "/usr/local/lib/node_modules/grunt-cli",
 	}
+	package { "fontconfig-devel":
+	    ensure  => present,
+	}
+	package { "freetype-devel":
+	    ensure  => present,
+	}
+	exec { "install-phantomjs":
+		command => "wget -N http://phantomjs.googlecode.com/files/phantomjs-1.8.2-linux-x86_64.tar.bz2 \
+		&& /bin/tar jxf /usr/local/src/phantomjs-1.8.2-linux-x86_64.tar.bz2 \
+		&& cp /usr/local/src/phantomjs-1.8.2-linux-x86_64/bin/phantomjs /usr/local/bin/",
+		cwd => "/usr/local/src/",
+		creates => "/usr/local/bin/phantomjs",
+		require => Package["freetype-devel", "fontconfig-devel"]
+	}
 }
