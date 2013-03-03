@@ -6,7 +6,7 @@ Installs:
 * [Grunt](http://gruntjs.com/) - The Javascript Task Runner
 * [PhantomJS](http://phantomjs.org/) - Headless WebKit with JavaScript API
 
-### Installation ###
+## Installation ##
 
 1. Checkout the git repo.
 2. Install Vagrant:
