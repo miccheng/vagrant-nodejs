@@ -4,7 +4,7 @@ class phpdevweb{
 	require yum
 	include iptables
 	include misc
-	include db
-	#include nodejs
+	#include db
+	include node_dev
 }
 include phpdevweb
