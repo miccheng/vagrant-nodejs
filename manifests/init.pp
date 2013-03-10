@@ -6,5 +6,6 @@ class nodejsdev{
 	include misc
 	#include db
 	include node_dev
+	#include punch
 }
 include nodejsdev

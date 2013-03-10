@@ -5,6 +5,7 @@ class node_dev{
 	exec { "install-grunt":
 		command => "/usr/local/bin/npm install -g grunt-cli",
 		creates => "/usr/local/lib/node_modules/grunt-cli",
+		require => Class["nodejs"]
 	}
 	package { "fontconfig-devel":
 	    ensure  => present,
