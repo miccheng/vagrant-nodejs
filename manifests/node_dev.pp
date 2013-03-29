@@ -1,6 +1,6 @@
 class node_dev{
 	class { 'nodejs':
-		version => '0.8.21',
+		version => '0.10.2',
 	}
 	exec { "install-grunt":
 		command => "/usr/local/bin/npm install -g grunt-cli",
