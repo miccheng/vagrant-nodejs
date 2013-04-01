@@ -1,6 +1,6 @@
 class node_dev{
 	class { 'nodejs':
-		version => '0.10.2',
+		version => $node_version,
 	}
 	# class { 'nodejs_from_source': }
 
