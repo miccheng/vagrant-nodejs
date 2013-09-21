@@ -20,8 +20,8 @@ class iptables {
     mode    => 600,
     replace => true,
     ensure  => present,
-    # source  => "puppet:///files/iptables.txt",
-    source  => "/vagrant/files/iptables.txt",
+    source  => "puppet:///modules/nodejsdev/iptables.txt",
+    # source  => "/vagrant/files/iptables.txt",
     # content => template("puppet:///templates/iptables.txt"),
     require => Package["iptables"],
 

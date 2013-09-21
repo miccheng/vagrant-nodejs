@@ -73,7 +73,7 @@ Vagrant.configure("2") do |config|
     puppet.manifest_file  = "init.pp"
     puppet.module_path    = "modules"
     puppet.facter = {
-      "node_version" => "0.10.2"
+      "node_version" => "0.10.18"
     }
   end
 
